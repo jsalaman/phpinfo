@@ -1,3 +1,7 @@
 <?php
-phpinfo();
+
+foreach (getallheaders() as $nombre => $valor) {
+    echo "$nombre: $valor\n";
+}
+
 ?>
